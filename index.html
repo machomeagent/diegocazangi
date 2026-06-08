@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+    const LINK_DO_SITE = "https://databases-eagle-reporting-basically.trycloudflare.com";
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -81,7 +85,7 @@
       Acesse o site profissional pelo botão abaixo.
     </p>
 
-    <a class="botao" href="https://databases-eagle-reporting-basically.trycloudflare.com">
+    <a id="botaoSite" class="botao" href="#">
       Acessar o site
     </a>
 
@@ -89,5 +93,9 @@
       Se o site não abrir, tente novamente em alguns minutos.
     </p>
   </div>
+
+  <script>
+    document.getElementById("botaoSite").href = LINK_DO_SITE;
+  </script>
 </body>
 </html>
